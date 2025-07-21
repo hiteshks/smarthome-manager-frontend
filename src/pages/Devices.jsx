@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const Devices = () => {
   return (
-    <h1>Devices Page</h1>
-  )
-}
+    <div className="pt-32 text-center text-2xl text-black">Devices Page</div>
+  );
+};
 
-export default Devices
+export default Devices;

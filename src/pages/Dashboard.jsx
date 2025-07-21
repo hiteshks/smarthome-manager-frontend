@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 
-const Home = () => {
+const Dashboard = () => {
   return (
     <div
       className="flex items-center justify-center px-4 md:px-8"
-      style={{ minHeight: "calc(100vh - 64px)" }} // Full height minus navbar
+      style={{ minHeight: "calc(100vh - 64px)" }}
     >
       <div
         className="backdrop-blur-lg bg-white/10 border border-gray-200 shadow-md rounded-2xl p-6 md:p-10 w-full text-center flex flex-col justify-center"
         style={{
-          maxWidth: "1000px", // wider container
-          minHeight: "500px", // taller container
+          maxWidth: "1000px",
+          minHeight: "500px",
         }}
       >
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
@@ -22,16 +22,10 @@ const Home = () => {
         </p>
         <div className="space-x-4">
           <Link
-            to="/login"
-            className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition"
+            to="/logout"
+            className="px-6 py-3 bg-red-600 text-white rounded-lg font-medium hover:bg-red-700 transition"
           >
-            Login
-          </Link>
-          <Link
-            to="/signup"
-            className="px-6 py-3 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200 transition"
-          >
-            Get Started
+            Logout
           </Link>
         </div>
       </div>
@@ -39,4 +33,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Dashboard;
